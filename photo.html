@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo  gallery</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+
+
+
+
+        <!-- top header navigation -->
+
+        <main>
+            <div class="big-wrapper">
+                <header>
+                    <div class="container">
+                        <div class="logo">
+                            <img src="logo.png" alt="logo">
+                            <h3>Jeff</h3>
+                        </div>
+        
+                        <div class="links">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#" class="btn">See my projects</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="overlay"></div>
+        
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </header>
+        
+        <!-- end header navigation -->
+        
+        <div class="wrapper">
+            <nav>
+                <div class="items">
+                    <span class="item active" data-filter="all">All</span>
+                    <span class="item" data-filter="logos">Logos</span>
+                    <span class="item" data-filter="business-cards">Business Cards</span>
+                    <span class="item" data-filter="web-figma">Web Figma</span>
+                    <span class="item" data-filter="flyers">Flyers</span>
+                    <span class="item" data-filter="banners">Banners</span>
+                </div>
+            </nav>
+    
+            <!-- Filtered Images -->
+            <div class="gallery">
+                <div class="image" data-filter="all" onclick="enlargeImage('img/img2.jpg')"><span><img src="img/img2.jpg" alt=""></span></div>
+                <div class="image" data-filter="logos" onclick="enlargeImage('img/img2.jpg')"><span><img src="img/img2.jpg" alt=""></span></div>
+                <div class="image" data-filter="logos" onclick="enlargeImage('img/img3.jpg')"><span><img src="img/img3.jpg" alt=""></span></div>
+                <div class="image" data-filter="logos" onclick="enlargeImage('img/img4.png')"><span><img src="img/img4.png" alt=""></span></div>
+                <div class="image" data-filter="business-cards" onclick="enlargeImage('img/img5.png')"><span><img src="img/img5.png" alt=""></span></div>
+                <div class="image" data-filter="business-cards" onclick="enlargeImage('img/img6.png')"><span><img src="img/img6.png" alt=""></span></div>
+                <div class="image" data-filter="web-figma" onclick="enlargeImage('img/img7.jpg')"><span><img src="img/img7.jpg" alt=""></span></div>
+                <div class="image" data-filter="web-figma" onclick="enlargeImage('img/img8.jpg')"><span><img src="img/img8.jpg" alt=""></span></div>
+                <div class="image" data-filter="flyers" onclick="enlargeImage('img/img9.png')"><span><img src="img/img9.png" alt=""></span></div>
+                <div class="image" data-filter="flyers" onclick="enlargeImage('img/img3.jpg')"><span><img src="img/img3.jpg" alt=""></span></div>
+                <div class="image" data-filter="banners" onclick="enlargeImage('img/img2.jpg')"><span><img src="img/img2.jpg" alt=""></span></div>
+                <div class="image" data-filter="banners" onclick="enlargeImage('img/img2.jpg')"><span><img src="img/img2.jpg" alt=""></span></div>
+    
+            </div>
+    
+            <!-- Enlarged Image Container -->
+            <div id="enlarged-image-container">
+                <button id="prev-btn" onclick="changeImage(-1)">Prv&lt; </button>
+                <img id="enlarged-image" alt="Enlarged Image">
+                <button id="next-btn" onclick="changeImage(1)">Nxt &gt;</button>
+            </div>
+        </div>
+        </div>
+    
+    
+      <!--javascript files--> 
+      <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <script src="photo.js"></script>
+    
+    
+    
+        <script>
+            function enlargeImage(imageSrc) {
+                // Set the source of the enlarged image
+                document.getElementById('enlarged-image').src = imageSrc;
+    
+                // Display the enlarged image container
+                document.getElementById('enlarged-image-container').style.display = 'flex';
+            }
+    
+            // Hide the enlarged image container when clicking outside the image
+            document.getElementById('enlarged-image-container').addEventListener('click', function (event) {
+                if (event.target === this) {
+                    this.style.display = 'none';
+                }
+            });
+        </script>
+        
+        
+        
+        
+                
+            </div>
+        </main>
+        
+
+</body>
+</html>

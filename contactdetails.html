@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-qv2t/6kRnvFJGAq9XYwR1fR9W/3kHlZ8eCIXTaW5jAj4sz5ViKjO8vmF3Y7b+jqD4kPwgjTTm8qod2iJW2fm5w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="contactdetails.css">
+    <title>contact details</title>
+</head>
+<body>
+<!-------------------------------------------------------------------------------------------NAVIGATION BAR--------------------------------------------->
+<main>
+    <div class="big-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                    <h3>Jeff</h3>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="landingpage.html">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="contactdetails.html">Contacts</a></li>
+                        <li><a href="gallery.html" class="btn">See my projects</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="overlay"></div>
+
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+     <!-------------------------------------------END OF NAVIGATION BAR---------------------------------------------------------------------------->
+
+
+
+
+
+        <!------------------------------------------------------------------------------------------- Get in touch part -->
+        <div class="intro">
+            <h3> GET IN TOUCH</h3>
+            <P>I am very approachable and i would love to speak to you, feel free to call send me an email. foloow me in social media or simply complete the inquiry form.</P>
+
+        </div>
+        
+            <!----------------------------------------------------------------------------------- end of get in touch part -->
+
+          
+
+            <!------------------------------------------------------------------------------------form and media part---------->
+
+            <div class="showcase-area">
+                <div class="container">
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="right">
+                    <h3>Contact Me</h3>
+                    <div class="contact-info align-items-start">
+                        <div class="icon">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                            <p>
+                                <span>Location</span>
+                                Nairobi, Kenya
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info align-items-start">
+                        <div class="icon">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                            <p>
+                                <span>Phone</span>
+                                +254783353672
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-info align-items-start">
+                        <div class="icon">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="text">
+                            <p>
+                                <span>Email</span>
+                                jeffgraphics254@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<div class="left">
+    <form action="receiver.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      
+        <input type="submit" value="Submit">
+      </form>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+
+              </div>
+         </div> 
+         
+         
+        <div class="bottom-area">
+            <div class="container">
+            
+
+                </button>
+            </div>
+        </div>
+   </div>
+</main>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="contactdetails.js"></script>
+</body>
+</html>
